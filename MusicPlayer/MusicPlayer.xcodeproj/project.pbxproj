@@ -24,7 +24,19 @@
 		F55CFD4F2AEE625800467DF7 /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55CFD4D2AEE625800467DF7 /* MusicPlayerViewController.swift */; };
 		F55CFD502AEE625800467DF7 /* MusicPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F55CFD4E2AEE625800467DF7 /* MusicPlayerViewController.xib */; };
 		F55CFD522AEE626800467DF7 /* MusicPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55CFD512AEE626800467DF7 /* MusicPlayerViewModel.swift */; };
+		F55CFD5A2AEE680A00467DF7 /* MusicPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55CFD592AEE680A00467DF7 /* MusicPlayerTests.swift */; };
+		F55CFD612AEE683100467DF7 /* MusicServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55CFD602AEE683100467DF7 /* MusicServiceMock.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F55CFD5B2AEE680A00467DF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F55CFD162AEE520800467DF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F55CFD1D2AEE520800467DF7;
+			remoteInfo = MusicPlayer;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F55CFD1E2AEE520800467DF7 /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,10 +58,20 @@
 		F55CFD4D2AEE625800467DF7 /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
 		F55CFD4E2AEE625800467DF7 /* MusicPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicPlayerViewController.xib; sourceTree = "<group>"; };
 		F55CFD512AEE626800467DF7 /* MusicPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewModel.swift; sourceTree = "<group>"; };
+		F55CFD572AEE680900467DF7 /* MusicPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F55CFD592AEE680A00467DF7 /* MusicPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerTests.swift; sourceTree = "<group>"; };
+		F55CFD602AEE683100467DF7 /* MusicServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServiceMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F55CFD1B2AEE520800467DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F55CFD542AEE680900467DF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -63,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				F55CFD202AEE520800467DF7 /* MusicPlayer */,
+				F55CFD582AEE680A00467DF7 /* MusicPlayerTests */,
 				F55CFD1F2AEE520800467DF7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				F55CFD1E2AEE520800467DF7 /* MusicPlayer.app */,
+				F55CFD572AEE680900467DF7 /* MusicPlayerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +124,15 @@
 			path = MusicPlayer;
 			sourceTree = "<group>";
 		};
+		F55CFD582AEE680A00467DF7 /* MusicPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F55CFD592AEE680A00467DF7 /* MusicPlayerTests.swift */,
+				F55CFD602AEE683100467DF7 /* MusicServiceMock.swift */,
+			);
+			path = MusicPlayerTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,6 +153,24 @@
 			productReference = F55CFD1E2AEE520800467DF7 /* MusicPlayer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F55CFD562AEE680900467DF7 /* MusicPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F55CFD5F2AEE680A00467DF7 /* Build configuration list for PBXNativeTarget "MusicPlayerTests" */;
+			buildPhases = (
+				F55CFD532AEE680900467DF7 /* Sources */,
+				F55CFD542AEE680900467DF7 /* Frameworks */,
+				F55CFD552AEE680900467DF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F55CFD5C2AEE680A00467DF7 /* PBXTargetDependency */,
+			);
+			name = MusicPlayerTests;
+			productName = MusicPlayerTests;
+			productReference = F55CFD572AEE680900467DF7 /* MusicPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -132,6 +183,10 @@
 				TargetAttributes = {
 					F55CFD1D2AEE520800467DF7 = {
 						CreatedOnToolsVersion = 15.0.1;
+					};
+					F55CFD562AEE680900467DF7 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = F55CFD1D2AEE520800467DF7;
 					};
 				};
 			};
@@ -149,6 +204,7 @@
 			projectRoot = "";
 			targets = (
 				F55CFD1D2AEE520800467DF7 /* MusicPlayer */,
+				F55CFD562AEE680900467DF7 /* MusicPlayerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -163,6 +219,13 @@
 				F55CFD2E2AEE520900467DF7 /* LaunchScreen.storyboard in Resources */,
 				F55CFD2B2AEE520900467DF7 /* Assets.xcassets in Resources */,
 				F55CFD4C2AEE5E5200467DF7 /* MusicTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F55CFD552AEE680900467DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +251,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F55CFD532AEE680900467DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F55CFD5A2AEE680A00467DF7 /* MusicPlayerTests.swift in Sources */,
+				F55CFD612AEE683100467DF7 /* MusicServiceMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F55CFD5C2AEE680A00467DF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F55CFD1D2AEE520800467DF7 /* MusicPlayer */;
+			targetProxy = F55CFD5B2AEE680A00467DF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F55CFD2C2AEE520900467DF7 /* LaunchScreen.storyboard */ = {
@@ -377,6 +457,42 @@
 			};
 			name = Release;
 		};
+		F55CFD5D2AEE680A00467DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UGMQQP3AYQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusuf.MusicPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusicPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MusicPlayer";
+			};
+			name = Debug;
+		};
+		F55CFD5E2AEE680A00467DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UGMQQP3AYQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusuf.MusicPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusicPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MusicPlayer";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -394,6 +510,15 @@
 			buildConfigurations = (
 				F55CFD332AEE520900467DF7 /* Debug */,
 				F55CFD342AEE520900467DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F55CFD5F2AEE680A00467DF7 /* Build configuration list for PBXNativeTarget "MusicPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F55CFD5D2AEE680A00467DF7 /* Debug */,
+				F55CFD5E2AEE680A00467DF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
